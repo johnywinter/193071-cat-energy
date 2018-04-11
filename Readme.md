@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Николай С](https://up.htmlacademy.ru/adaptive/14/user/193071).
-* Наставник: `Неизвестно`.
+* Наставник: Анастасия Мусаэльян (https://htmlacademy.ru/profile/musaelyan).
 
 ---
 
