@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <a class="main-nav__logo-mobile"><img src="http://placehold.it/33x38" width="33" height="38" alt="cat-logo"></a>
+      <a class="main-nav__logo-header"><img src="http://placehold.it/101x18" width="101" height="18" alt="catenergy-header"></a>
+      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <div class="main_nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Каталог Продукции</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Подбор Программы</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="form">
+      <h2 class=form__title>Подбор программы</h2>
+      <p class="form__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form method="post" action="https://echo.htmlacademy.ru">
+        <div class="form__input-line">
+          <label for="check1">Имя:*</label>
+          <input class="field" type="text" name="nickname" id="check1" value="Барсик" />
+        </div>
+        <div class="form__input-line">
+          <label for="check2">Вес(КГ):*</label>
+          <input class="field" type="text" name="weight" id="check2" value="7" />
+        </div>
+        <div class="form__input-line">
+          <label for="check3">Возраст:*</label>
+          <input class="field" type="text" name="age" id="check3" value="7" />
+        </div>
+        <div class="form__column">
+          <ul class="form__column-list">
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure1" id="check4" checked/>
+              <label for="check4">Похудение</label>
+            </li>
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure2" id="check5" />
+              <label for="check5">Набор массы</label>
+            </li>
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure3" id="check6" />
+              <label for="check6">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
+        </div>
+        <div class="form__contacts">
+          <p class="form__contacts-text">
+            Контактные данные (владельца кота)
+          </p>
+          <div class="form__input-line">
+            <label for="email">E-mail:*</label>
+            <input class="field" type="email" name="email" value="kuklachev@gmail.com" />
+          </div>
+          <div class="form__input-line">
+            <label for="tel">Телефон:*</label>
+            <input class="field" type="tel" name="tel" value="8 (960) 900-60-90" />
+          </div>
+        </div>
+        <div class="form__comment">
+          <p class="form__comment-text">
+            Комментарий
+          </p>
+          <textarea>Расскажите обо всех повадках кота</textarea>
+        </div>
+        <div class="form__additional">
+          <p class="form__additional-text">
+            Дополнительно
+          </p>
+          <ul class="form__column-list">
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure1" id="sugar" checked/>
+              <label for="sugar">Сахарозаменитель</label>
+            </li>
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure2" id="water" />
+              <label for="water">Питьевая вода</label>
+            </li>
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure3" id="milk" />
+              <label for="milk">Молоко</label>
+            </li>
+            <li class="form__column-item">
+              <input class="visually-hidden" type="checkbox" name="infastructure3" id="vitamins" />
+              <label for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </div>
+        <button class="button" type="submit">Отправить заявку</button>
+        <small class="form__legend stats__legend--top"><sup>*</sup> — Обязательные поля</small>
+      </form>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+        <p class="contacts__text">
+          ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+        </p>
+      </div>
+      <div class="map-canvas">
+        <img src="http://placehold.it/320x400" width="320" height="400" alt="map">
+      </div>
+      <div class="page-footer__logo logo">
+        <img src="http://placehold.it/128x24" width="128" height="24" alt="footer-logo">
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__button social__button--vk" href="#">Вконтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__button social__button--instagram" href="#">Инстаграм</a>
+          </li>
+          <li class="social__item">
+            <a class="social__button social__button--facebook" href="#">Фэйсбук</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <a class="button copyright__button" href="https://up.htmlacademy.ru/adaptive/14">HTML Academy</a>
+      </div>
+    </footer>
+  </main>
+</body>
+
+</html>
