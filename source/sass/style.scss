@@ -1,1 +1,11 @@
-body { background: green; }
+@import "variables.scss";
+@import "base.scss";
+@import "mixins.scss";
+@import "blocks/visually-hidden.scss";
+@import "normalize.scss";
+@import "blocks/btn.scss";
+@import "blocks/header.scss";
+@import "blocks/intro.scss";
+@import "blocks/categories.scss";
+@import "blocks/advantages.scss";
+@import "blocks/example.scss";
