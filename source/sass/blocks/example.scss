@@ -1,0 +1,141 @@
+.example {
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 35px 20px 35px 20px;
+}
+
+.example__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 60px;
+  margin-top: 0;
+  color: $black;
+  margin-bottom: 23px;
+}
+
+.example__description {
+  font-family: "Arial", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: $gray;
+}
+
+.example__list {
+  margin-bottom: 40px;
+}
+
+.example__features {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.example__feature {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  border: $border;
+  border-radius: 3px;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 16px;
+  width: 124px;
+}
+
+.example__feature-title {
+  font-family: $oswald;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.example__feature-description {
+  font-family: "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  display: block;
+  position: absolute;
+  width: 80px;
+  background-color: #f2f2f2;
+  bottom: -28px;
+}
+
+.example__caption {
+  text-align: center;
+}
+
+.example__caption-title {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+.example__slider-pagination {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  align-items: center;
+  margin: 0 45px;
+}
+
+.example__slider-btn {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+
+  background-color: transparent;
+  border: none;
+}
+
+.example__slider-btn--before {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.example__slider-btn--after {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $oswald;
+  color: $black;
+  text-transform: uppercase;
+
+  cursor: pointer;
+}
+
+.example__slider-toggle {
+  width: 84px;
+  height: 14px;
+  margin: 0 19px;
+  padding: 3px 4px;
+
+  background-color: #ffffff;
+
+  border: $border;
+  border-radius: 4px;
+
+  box-sizing: border-box;
+}
+
+.slider {
+  display: block;
+  background-color: $green;
+  border-radius: 6px;
+  width: 50%;
+  height: 6px;
+
+}
