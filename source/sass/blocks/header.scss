@@ -1,39 +1,11 @@
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 6.25%;
+.header .header__top {
+  position: relative;
 }
 
-.menu__list {
-  @include list-reset;
-}
-
-.menu__item {
-  border-top: $border;
-
-  &:last-of-type {
-    border-bottom: $border;
-  }
-}
-
-.menu__link {
+.header__logo-link {
   display: block;
-  padding: 23px 0;
-
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  font-family: $oswald;
-  text-align: center;
-  color: $black;
-  text-transform: uppercase;
-  text-decoration: none;
-
-&:hover {
-  color: rgba($black, 0.6);
-}
-
-&:active {
-  color: rgba($black, 0.3);
-}
+  padding: 11px 0 53px;
+  margin-bottom: 1px;
+  width: 191px;
+  height: 38px;
 }

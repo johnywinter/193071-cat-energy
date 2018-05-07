@@ -10,14 +10,15 @@
 
 <body>
   <header class="header">
-    <nav class="main__nav">
       <div class="header__top">
         <a class="header__logo-link">
           <img class="header__logo" src="img/logo-mobile.svg" width="191" height="38" alt="cat-energy">
         </a>
-        <button class="header__menu-toggle" type="button">Открыть меню</button>
+        <button class="header__menu-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </div>
-      <div class="nav__menu">
+      <nav class="nav__menu">
         <ul class="menu__list">
           <li class="menu__item">
             <a class="menu__link main-link--active">Главная</a>
@@ -29,8 +30,7 @@
             <a class="menu__link" href="form.html">Подбор Программы</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
   </header>
   <main class="page">
     <section class="intro">
@@ -48,14 +48,14 @@
           <p class="category__description">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="category__link">Каталог Slim</a>
+          <a class="category__link" href="catalog.html">Каталог Slim</a>
         </li>
         <li class="categories__item category--weight">
           <h3 class="category__title">Набор массы</h3>
           <p class="category__description">
             Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
           </p>
-          <a class="category__link">Каталог Pro</a>
+          <a class="category__link" href="catalog.html">Каталог Pro</a>
       </ul>
     </section>
     <section class="advantages">
@@ -85,40 +85,39 @@
     </section>
     <section class="example">
       <h2 class="example__title">Живой пример</h2>
-      <p class="example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-      </p>
+        <p class="example__description">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
       <div class="example__features">
-        <div class="example__feature">
-          <b class="example__feature-title">5 кг</b>
-        </div>
-        <span class="example__feature-description">Снижение веса</span>
+          <div class="example__feature">
+            <b class="example__feature-title">5 кг</b>
+            <span class="example__feature-description">Снижение веса</span>
+          </div>
+          <div class="example__feature">
+            <b class="example__feature-title">60 дней</b>
+            <span class="example__feature-description">Затрачено времени</span>
+          </div>
       </div>
-      <div class="example__features">
-        <div class="example__feature">
-          <b class="example__feature-title">60 дней</b>
-        </div>
-        <span class="example__feature-description">Затрачено времени</span>
+      <div class="example__caption">
+        <b class="example__caption-title">Затраты на питание:15 000 руб.</b>
       </div>
-      <b class="example__caption">Затраты на питание: 15 000 руб.</b>
       <div class="example__slider">
-        <div class="example__slides">
-          <div class="example__slide">
-            <img class="example__slide-img" src="img/before-mobile@1x.png" width="311" height="232" alt="fat-cat" />
+          <div class="example__slides">
+            <div class="example__slide">
+              <img class="example__slide-img" src="img/before-mobile@1x.png" width="311" height="232" alt="fat-cat" />
+            </div>
+            <div class="example__slide">
+              <img class="example__slide-img" src="img/after-mobile@1x.png" width="311" height="232" alt="slim-cat" />
+            </div>
           </div>
-          <div class="example__slide">
-            <img class="example__slide-img" src="img/after-mobile@1x.png" width="311" height="232" alt="slim-cat" />
+          <div class="example__slider-pagination">
+            <button class="example__slider-btn example__slider-btn--before">Было</button>
+            <div class="example__slider-toggle">
+              <span class="slider"></span>
+            </div>
+            <button class="example__slider-btn example__slider-btn--after">Стало</button>
           </div>
         </div>
-        <div class="example__slider-pagination">
-          <button class="example__slider-btn">Было</button>
-          <label class="example__slider-toggle">
-            <input type="checkbox">
-            <span class="slider"></span>
-          </label>
-          <button class="example__slider-btn">Стало</button>
-        </div>
-      </div>
     </section>
   </main>
   <footer class="footer">
@@ -128,15 +127,12 @@
         ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
       </p>
     </div>
-    <!--
     <div class="footer__map">
-      <iframe="footer__map-canvas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.439345236038!2d30.320489500940457!3d59.93887177974153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2slv!4v1524053898372"
-        width="320" height="400" allowfullscreen>
+       <iframe class="footer__map-canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d999.299557663316!2d30.323083!3d59.938794!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1524409036407" style="border:0" allowfullscreen></iframe>
     </div>
-    -->
     <div class="footer__bottom">
       <div class="footer__logo">
-        <a class="footer__logo-link">
+        <a class="footer__logo-link" href="index.html">
           <img class="footer__logo-img" src="img/logo-footer.svg" width="128" height="24" alt="footer-logo" />
         </a>
       </div>
@@ -146,7 +142,7 @@
         <li class="social__item">
           <a class="social__button social__button--vk" href="#">
             <span class="visually-hidden">Мы в Вконтакте</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+            <svg class="social__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
             <g>
               <path
                 d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -171,7 +167,7 @@
         <li class="social__item">
           <a class="social__button social__button--instagram" href="#">
             <span class="visually-hidden">Мы в Инстраграме</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
+            <svg class="social__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="16" viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve">
             <style type="text/css">
               .st0 {
                 fill: #231F20;
@@ -188,7 +184,7 @@
         <li class="social__item">
           <a class="social__button social__button--facebook" href="#">
             <span class="visually-hidden">Мы в Фейсбуке</span>
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
+            <svg class="social__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="10" height="19" viewBox="0 0 10 19" style="enable-background:new 0 0 10 19;" xml:space="preserve">
             <g>
               <path
                 d="M7.1,19H2v-8.8H0V5.8h1.9c-0.1-2,0.2-3.4,1.1-4.4C3.8,0.5,5,0.1,6.5,0L10,0v4.2H7.2C7.1,4.4,7,5,7,5.8H10v4.4H7.1V19z
@@ -201,9 +197,9 @@
       </ul>
     </div>
     <div class="footer__copyright">
-      <b class="footer__copyright-text">HTML Academy</b>
-      <a class="footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/14">HTML Academy</a>
-      <svg width="41" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+      <a class="footer__copyright-link" href="https://up.htmlacademy.ru/adaptive/14">HTML Academy
+        <svg class="footer__copyright-icon" width="41" height="48" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path fill="#2E368F" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
+      </a>
     </div>
   </footer>
 </body>
