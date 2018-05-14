@@ -1,0 +1,39 @@
+.header__menu-toggle {
+  display: none;
+}
+
+.header__menu-toggle {
+  display: block;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    background: url("../img/icon-mobile-menu.svg") no-repeat;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &--opened {
+    &::before {
+      background: url("../img/icon-close.svg") no-repeat;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__menu-toggle {
+    display: none;
+
+    &::before {
+      display: none;
+    }
+  }
+}

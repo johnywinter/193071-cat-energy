@@ -1,0 +1,60 @@
+.logo:not(.logo--index) {
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.header__logo-wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 65px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: -20px;
+    display: block;
+    width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+}
+
+.logo--footer {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo-image {
+    width: 173px;
+    height: 58px;
+  }
+
+  .header__logo-wrapper {
+    &::after {
+      display: none;
+    }
+  }
+
+  .logo--footer {
+    display: flex;
+    align-items: center;
+    width: 162px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo-image {
+    width: 202px;
+    height: 59px;
+  }
+}
