@@ -105,12 +105,24 @@
   margin-bottom: 36px;
 }
 
-.example__toggle-text {
+.example__toggle-btn {
   margin: 0;
   padding: 0;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-bottom: dotted 1px #b8b8b8;
+
+  &:hover {
+  border-bottom: solid 1px #b8b8b8;
+  }
+
+  &:active {
+  border: none;
+  }
 }
 
 .example__toggle {
@@ -162,11 +174,6 @@
     background: linear-gradient(to bottom, #ffffff 620px, transparent 620px),
       linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     background-color: #ffffff;
-  }
-
-  .example__img {
-    width: 677px;
-    height: 499px;
   }
 
   .example__wrapper-left {
@@ -304,7 +311,7 @@
     }
   }
 
-  .example__toggle-text {
+  .example__toggle-btn {
     font-size: 20px;
     line-height: 20px;
   }
@@ -348,7 +355,7 @@
     margin-bottom: 82px;
   }
 
-  .before-after__subtitle-wrapper {
+  .example__subtitle-wrapper {
     flex-direction: column;
   }
 
@@ -363,7 +370,7 @@
     width: 325px;
   }
 
-  .before-after__name {
+  .example__name {
     background-color: $secondary-color;
   }
 

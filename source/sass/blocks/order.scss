@@ -30,7 +30,7 @@
 .order__list {
   margin: 0;
   padding: 0;
-  list-style: none;
+  @include list-reset;
 }
 
 .order__item {
@@ -60,12 +60,17 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &:hover {
-    border: 1px solid rgba(205, 205, 205, 1);
+    border: none;
   }
 
   &:focus {
-    border: 1px solid #444444;
+    border: none;
     outline: 1px solid #444444;
+  }
+
+  &:invalid {
+  border: none;
+  outline: 2px solid rgb(255, 130, 130);
   }
 }
 
@@ -153,6 +158,10 @@
     background-size: 17px 13px;
     background-position: center right 15px;
   }
+
+  &:invalid {
+  background-image: url("../img/icon-mail-red.svg");
+  }
 }
 
 .order__input--tel {
@@ -165,6 +174,10 @@
     background: url("../img/icon-phone-green.svg") no-repeat;
     background-position: center right 13px;
     background-size: 20px 20px;
+  }
+
+  &:invalid {
+  background-image: url("../img/icon-phone-red.svg");
   }
 }
 
@@ -530,5 +543,9 @@
   .order__input--tel,
   .order__input--tel:focus {
     background-position: center right 18px;
+  }
+
+  .order__input {
+    width: 506px;
   }
 }

@@ -18,13 +18,19 @@
   text-align: center;
 }
 
-.social__button:hover use,
-.social__button:focus use {
-  fill: $primary-color;
-}
 
-.social__button:active {
-  opacity: 0.3;
+.social__link {
+
+  fill: #666666;
+
+  &:hover {
+    fill: #68b738;
+  }
+
+  &:active {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,12 +51,12 @@
       height: 16px;
     }
 
-    &--instagram {
+    &--inst {
       width: 23px;
       height: 23px;
     }
 
-    &--facebook {
+    &--fb {
       width: 14px;
       height: 28px;
     }

@@ -1,4 +1,4 @@
-.product__content {
+.product {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -14,11 +14,11 @@
   width: 140px;
 }
 
-.product__img-link {
+.product__img {
   display: block;
 }
 
-.product__title {
+.product__name {
   width: 75px;
   margin: 0;
   padding: 0;
@@ -52,7 +52,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .product__content {
+  .product {
     flex-direction: column;
     align-items: center;
     width: 324px;
@@ -81,11 +81,11 @@
     padding-top: 35px;
   }
 
-  .product__description {
+  .product__name-wrapper {
     margin-bottom: 33px;
   }
 
-  .product__title {
+  .product__name {
     width: 140px;
     margin-bottom: 19px;
     padding-top: 38px;
@@ -113,7 +113,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .product__content {
+  .product {
     width: 245px;
     margin-bottom: 57px;
   }
