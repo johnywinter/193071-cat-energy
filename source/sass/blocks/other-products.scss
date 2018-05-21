@@ -58,7 +58,7 @@
   }
 }
 
-.other__products__gift-text {
+.other__products-text {
   margin: 0;
   padding: 0;
   font-family: $secondary-font;
@@ -115,7 +115,7 @@
       margin-left: 0;
     }
 
-    .other__products__gift-text {
+    .other__products-text {
       width: 170px;
       text-align: left;
     }
@@ -136,7 +136,7 @@
     }
   }
 
-  .other-products-wrapper {
+  .other-products__wrapper {
     display: flex;
     justify-content: space-between;
   }
@@ -160,7 +160,7 @@
       margin-left: -27px;
     }
 
-    .other__products__gift-text {
+    .other__products-text {
       width: 165px;
       text-align: center;
     }

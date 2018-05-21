@@ -30,7 +30,7 @@
 .order__list {
   margin: 0;
   padding: 0;
-  @include list-reset;
+  list-style: none;
 }
 
 .order__item {
@@ -43,6 +43,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .order__input {
@@ -60,11 +61,11 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &:hover {
-    border: none;
+    border: 1px solid rgba(205, 205, 205, 1);
   }
 
   &:focus {
-    border: none;
+    border: 1px solid #444444;
     outline: 1px solid #444444;
   }
 
@@ -411,7 +412,7 @@
     line-height: 30px;
   }
 
-  .order-checkbox-wrapper {
+  .order__checkbox-wrapper {
     display: flex;
     flex-wrap: wrap;
     margin-left: -60px;
@@ -443,7 +444,7 @@
     }
   }
 
-  .order-button-wrapper {
+  .order__button-wrapper {
     display: flex;
     align-items: center;
     margin-bottom: 74px;
@@ -478,7 +479,7 @@
     padding: 0;
   }
 
-  .order-fieldset-wrapper {
+  .order__fieldset-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -513,7 +514,7 @@
     margin-bottom: 64px;
   }
 
-  .order-checkbox-wrapper {
+  .order__checkbox-wrapper {
     margin-left: -80px;
   }
 
@@ -531,7 +532,7 @@
     margin-bottom: 28px;
   }
 
-  .order-button-wrapper {
+  .order__button-wrapper {
     margin-bottom: 82px;
   }
 
@@ -543,9 +544,5 @@
   .order__input--tel,
   .order__input--tel:focus {
     background-position: center right 18px;
-  }
-
-  .order__input {
-    width: 506px;
   }
 }

@@ -1,4 +1,4 @@
-.footer__logo {
+.footer__logo-link {
   &:hover {
     opacity: 0.8;
   }
@@ -27,7 +27,7 @@
   }
 }
 
-.logo--footer {
+.footer__logo-link--logo {
   display: block;
   text-align: center;
 }
@@ -44,7 +44,7 @@
     }
   }
 
-  .logo--footer {
+  .footer__logo-link--logo {
     display: flex;
     align-items: center;
     width: 162px;

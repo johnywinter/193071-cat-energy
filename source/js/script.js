@@ -1,6 +1,6 @@
 var toggleBtn = document.querySelector(".header__menu-toggle");
-var toggleMenu = document.querySelector(".nav__menu");
+var toggleMenu = document.querySelector(".menu");
 
   toggleBtn.addEventListener("click", function () {
-    toggleMenu.classList.toggle("nav__menu--open");
+    toggleMenu.classList.toggle("menu--open");
   });

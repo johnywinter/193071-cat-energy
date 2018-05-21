@@ -1,32 +1,32 @@
-.page-intro {
+.page__intro {
   margin-bottom: 23px;
 }
 
-.page-categories {
+.page__categories {
   margin-bottom: 16px;
 }
 
-.page-advantages {
+.page__advantages {
   margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
-  .page-intro {
+  .page__intro {
     margin-bottom: 20px;
     padding-bottom: 509px;
   }
 
-  .page-categories {
+  .page__categories {
     margin-bottom: 45px;
   }
 
-  .page-advantages {
+  .page__advantages {
     margin-bottom: -32px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .page-intro {
+  .page__intro {
     padding-bottom: 250px;
   }
 }

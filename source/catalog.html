@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Кэт энерджи</title>
   <link href="css/style.css" rel="stylesheet">
+  <script>
+  document.documentElement.classList.replace('no-js', 'js');
+  </script>
 </head>
 
 <body>
+  <div style="display: none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
+
   <div class="container">
     <header class="header">
       <div class="header__logo-wrapper">
@@ -20,19 +27,19 @@
           </picture>
         </a>
         <button class="header__menu-toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
       </div>
-      <nav class="nav__menu">
+      <nav class="menu menu--closed menu--nojs">
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link main__link--black" href="index.html">Главная</a>
+            <a class="menu__link menu__link--black" href="index.html">Главная</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link main__link--black main-link--active">Каталог Продукции</a>
+            <a class="menu__link menu__link--black menu__link--active">Каталог Продукции</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link main__link--black" href="form.html">Подбор Программы</a>
+            <a class="menu__link menu__link--black" href="form.html">Подбор Программы</a>
           </li>
         </ul>
       </nav>
@@ -259,7 +266,7 @@
     <section class="other-products">
       <div class="container">
         <h2 class="other-products__title">Дополнительные товары</h2>
-        <div class="other-products-wrapper">
+        <div class="other-products__wrapper">
           <ul class="other-products__list">
             <li class="other-products__item">
               <div class="other-product">
@@ -311,7 +318,7 @@
             </li>
           </ul>
           <div class="other-products__gift">
-            <p class="other__products__gift-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
+            <p class="other__products-text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
           </div>
         </div>
       </div>
@@ -332,20 +339,20 @@
           <img class="address__map-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Карта с адресом ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
         <div class="address__map-pin"></div>
-        <iframe class="address__map-interactive" width="600" height="450" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKadbyg8xlkYRn4c8SdRTnOo&key=AIzaSyBQCNx3m1QSwvZCWuwB32lr06C8F2uFpqg" allowfullscreen></iframe> -->
+        <iframe class="address__map-interactive" width="600" height="450" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKadbyg8xlkYRn4c8SdRTnOo&key=AIzaSyBQCNx3m1QSwvZCWuwB32lr06C8F2uFpqg" allowfullscreen></iframe>
       </div>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper container">
-      <a class="logo logo--index logo--footer footer__logo">
-        <img class="logo__footer" src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat-energy">
+      <a href="index.html" class="footer__logo-link footer__logo-link--logo">
+        <img class="footer__logo-image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип cat-energy">
       </a>
       <ul class="social">
         <li class="social__item">
           <a href="#" class="social__link">
             <span class="visually-hidden">ВКонтакте</span>
-            <svg class="social__svg social__svg--vk" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
+            <svg class="social__svg social__svg--vk" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="12" viewBox="0 0 22 12" style="enable-background:new 0 0 22 12;" xml:space="preserve">
             <g>
               <path
                 d="M17.6,12c-0.3,0-0.9-0.1-1.5-0.5c-0.5-0.3-0.9-0.7-1.3-1.2c-0.3-0.3-0.9-0.9-1.1-0.9c-0.2,0.1-0.4,0.7-0.3,1.2
@@ -399,6 +406,7 @@
       </a>
     </div>
   </footer>
+  <script src="js/picturefill.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 
