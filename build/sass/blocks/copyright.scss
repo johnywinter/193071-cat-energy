@@ -1,0 +1,30 @@
+.copyright {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 16px;
+  color: $secondary-text-color;
+}
+
+.copyright {
+  fill: #666666;
+}
+
+.copyright:hover,
+.copyright:focus {
+  fill: #68b738;
+}
+
+.copyright:active {
+  opacity: 0.3;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 162px;
+    padding: 0;
+  }
+}
