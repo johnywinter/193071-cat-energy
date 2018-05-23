@@ -1,0 +1,132 @@
+.product {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -1px;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #ededed;
+}
+
+.product__link {
+  width: 140px;
+}
+
+.product__img {
+  display: block;
+}
+
+.product__name {
+  width: 75px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+  padding-top: 21px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: $main-text-color;
+}
+
+.product__row {
+  display: flex;
+  justify-content: space-between;
+  width: 138px;
+  margin: 0;
+  padding: 0;
+}
+
+.product__column {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $secondary-text-color;
+}
+
+.product__order-btn {
+  margin-bottom: 24px;
+}
+
+@media (min-width: $tablet-width) {
+  .product {
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 56px;
+    background: linear-gradient(to bottom, #ffffff 85px, $secondary-color 85px);
+    border: none;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .product__link {
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+
+  .product__picture {
+    width: 324px;
+  }
+
+  .product__img--small {
+    padding-top: 35px;
+  }
+
+  .product__name-wrapper {
+    margin-bottom: 33px;
+  }
+
+  .product__name {
+    width: 140px;
+    margin-bottom: 19px;
+    padding-top: 38px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+  }
+
+  .product__row {
+    width: 250px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+
+  .product__column {
+    font-size: 16px;
+    line-height: 16px;
+  }
+
+  .product__order-btn {
+    width: 249px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product {
+    width: 245px;
+    margin-bottom: 57px;
+  }
+
+  .product__picture {
+    width: 240px;
+  }
+
+  .product__row {
+    width: 169px;
+  }
+
+  .product__order-btn {
+    width: 169px;
+  }
+}

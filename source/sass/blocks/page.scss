@@ -1,19 +1,32 @@
-.page {
-  width: 320px;
-  margin: 0 auto;
+.page__intro {
+  margin-bottom: 23px;
 }
 
-.page__title {
-  @include text-reset;
-  width: 280px;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  padding: 0 6.25%;
+.page__categories {
+  margin-bottom: 16px;
+}
 
+.page__advantages {
+  margin-bottom: 40px;
+}
 
-  font-weight: normal;
-  font-size: 36px;
-  line-height: 60px;
-  font-family: $oswald;
-  color: $black;
+@media (min-width: $tablet-width) {
+  .page__intro {
+    margin-bottom: 20px;
+    padding-bottom: 509px;
+  }
+
+  .page__categories {
+    margin-bottom: 45px;
+  }
+
+  .page__advantages {
+    margin-bottom: -32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__intro {
+    padding-bottom: 250px;
+  }
 }
